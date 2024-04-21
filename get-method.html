@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mouse Events</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 25px;
+            padding: 12px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="boxclass" >
+        <h1 id="heading">This is Box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae iste quae unde blanditiis tenetur at maxime ipsam inventore enim corrupti illo, mollitia sit ducimus.</p>
+    </div>
+    <button id="setBtn">Set Value</button>
+
+    
+    <script>
+        /*$(document).ready(function(){
+         var data = $('#box').('class');
+ 
+         console.log(data);
+        });*/
+ 
+ 
+ 
+ 
+        // set method
+ 
+ 
+ 
+        $(document).ready(function(){
+         $('#setBtn').click(function(){
+             $('#heading').text("Babar Writes");
+         });
+        });
+ 
+ 
+        $('#setBtn').click(function(){
+             $('#box p').text("The paragraph has been changed");
+         });
+ 
+ 
+         $('#setBtn').click(function(){
+             $('#box p').html("The <b>paragraph</b> has been changed");
+         });
+ 
+ 
+         
+     </script>
+    
+</body>
+</html>

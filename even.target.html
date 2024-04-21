@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 50vh;
+            background-color: pink;
+            border: 2px solid black;
+            margin: 12px auto;
+            padding: 12px;
+        }
+        button {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h1>The Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptates sequi, nostrum praesentium voluptatum itaque.</p>
+        <button>Button</button>
+    </div><br>
+
+    <h2 id="show"></h2>
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+
+    <script>
+       /* $(document).ready(function(){
+           $('#box').on("click",function(event){
+            $('h2').html("Target Element : " + event.target);
+           });
+        }); */
+
+        $(document).ready(function(){
+           $('#box').on("click",function(event){
+            $('h2').html("Target Element : " + event.target.innerHTML);
+           });
+        
+        });
+    
+    </script>
+</body>
+</html>

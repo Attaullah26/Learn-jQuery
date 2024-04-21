@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Each Method</title>
+</head>
+<body>
+    <h2>Fruits Names List</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+        <li>Pineapple</li>
+    </ul>
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('li').each(function(){
+                console.log($(this).text());
+            });
+        });
+    </script>
+</body>
+</html>

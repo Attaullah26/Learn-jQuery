@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        div {
+            width: 300px;
+            height: auto; 
+            margin: 25px;
+            padding: 12px;
+            border: 2px solid black;
+        }
+        .style1 {
+            background-color: lightblue;
+        }
+        .style2 {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="boxclass" >
+        <h1 id="heading">This is Box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae iste quae unde blanditiis tenetur at maxime ipsam inventore enim corrupti illo, mollitia sit ducimus.</p>
+    </div><br><br>
+
+   <!------- <button id="start">Prepend</button> &nbsp;
+    <button id="end">Append</button> &nbsp;-------->
+
+    <!----button id="start1">prependTo</button> &nbsp;
+    <button id="end2">appendTo</button> &nbsp;---->
+
+    <!----button id="start3">addBefore</button> &nbsp;
+    <button id="end3">addAfter</button> &nbsp;---->
+
+    <button id="emptyBtn">Empty</button> &nbsp;
+    <button id="removeBtn">Remove</button> &nbsp;
+
+
+
+    <script>
+
+        // Append & Prepend
+
+       /* $(document).ready(function(){
+            $("#start").click(function(){
+                $('#box').prepend("<h3>Babar Writes</h3>");
+            });
+
+
+            $('#end').click(function(){
+                $('#box').append('<p>The End</p>');
+            });
+        });*/
+
+
+
+
+        // AppendTo & prependTo
+
+       /* $(document).ready(function(){
+            $("#start1").click(function(){
+                ("<h3>Babar Writes</h3>").prependTo('#box')
+            });
+
+            $('#end1').click(function(){
+                $('<p>The End</p>').appendTo('#box');
+            });
+        });*/
+
+
+
+
+        // Before & After 
+
+        /*$(document).ready(function(){
+            $('#start3').click(function(){
+                $('#box').before('This is Before');
+            });
+
+             $('#end3').click(function(){
+                $('#box').after('This is After');
+            });
+        });*/
+
+
+
+
+        // Empty & Remove
+
+        $(document).ready(function(){
+            $('#emptyBtn').click(function(){
+               $('#box').empty(); 
+            });
+
+
+            $('#removeBtn').click(function(){
+               $('#heading').remove(); 
+            });
+        });
+
+        
+    </script>
+</body>
+</html>

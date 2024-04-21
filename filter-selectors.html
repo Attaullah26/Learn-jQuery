@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <style>
+        div {
+            width: 500px;
+            height: auto; 
+            margin: 25px;
+            padding: 12px;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box" class="boxclass" >
+        <h1 id="heading">This is Box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae iste quae unde blanditiis tenetur at maxime ipsam inventore enim corrupti illo, mollitia sit ducimus.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae iste quae unde blanditiis tenetur at maxime ipsam inventore enim corrupti illo, mollitia sit ducimus.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa beatae iste quae unde blanditiis tenetur at maxime ipsam inventore enim corrupti illo, mollitia sit ducimus.</p>
+    </div>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li id="li1">Graps</li>
+        <li>Coconut</li>
+        <li>Pineapple</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $('ul li').not('#li1').css('background','pink');
+        });
+
+        $(document).ready(function(){
+            $('#box p').first().css('background','pink');
+        });
+        
+    </script>
+</body>
+</html>
