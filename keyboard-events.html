@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn jQuery</title>
+    <style>
+        #test {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0px;
+            margin-top: 20px;
+            text-align: center;
+            padding-top: 25px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        #animateBtn {
+            position: fixed;
+            top: 225px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <h1>Heading</h1>
+        <p>This is main div of the doucment</p>
+        
+    </div> <br>
+    <button id="animateBtn">Animate</button><br>
+    <button id="stop">Stop</button>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#animateBtn').click(function(){
+                $('#test').animate({
+                    marginLeft : '450px'
+                },3000)
+            
+            });
+            $('#stop').click(function(){
+                $('#test').stop(true,true);
+            });
+           
+        });
+    </script>
+</body>
+</html>

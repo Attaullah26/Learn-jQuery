@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events</title>
+    <style>
+        .container, .container2{
+            width: 80vw;
+            height: 200px;
+            border: 2px solid black;
+            padding: 25px;
+            margin: 20px auto;
+            background-color: pink;
+        }
+        .first {
+            background-color: lightblue;
+        }
+        .second {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning jQuery with Babar Writes</h1>
+    <div class="container" id="box">
+        <h1>Heading</h1>
+        <b><p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error aliquam quia et hic a ipsum rem voluptatum quaerat provident tempora voluptatem, ducimus quibusdam exercitationem saepe iusto explicabo nesciunt incidunt.</p></b>
+        
+    </div>
+    <button id="add">addClass</button>
+        <button id="remove">removeClass</button>
+        <button id="toggle">toggle</button>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla error animi, est necessitatibus ipsam ipsa vitae</p>
+   
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+
+        //class funciton
+
+
+        /*$(document).ready(function(){
+            $('#add').click(function(){
+                $('#box').addClass('first second');
+            });
+
+            $('#remove').click(function(){
+                $('#box').removeClass('second');
+            });
+
+            $('#toggle').click(function(){
+                $('#box').toggleClass('second');
+            });
+        });
+
+
+        //ON OFF function
+
+
+        $(document).ready(function(){
+            $('#box').on({
+                click : function(){
+                    $(this).css('background-color','red');
+                },
+                mouseenter : function(){
+                    $(this).css('background-color','yellow');
+                },
+                mouseout : function(){
+                    var babar = $(this).html();
+
+                    alert();
+                }
+            });
+        });*/
+        $(document).ready(function(){
+            $('#add').click(function(){
+                $ ('#box').slideUp();
+            });
+
+            $('#remove').click(function(){
+                $ ('#box').slideDown();
+            });
+            
+            $('#toggle').click(function(){
+                $ ('#box').slideToggle(1000);
+            });
+            
+            
+        });
+        
+        
+    </script>
+    
+</body>
+</html>
